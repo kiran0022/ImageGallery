@@ -40,11 +40,11 @@ class Container{
     //fetch response
     async fetchImages(baseUrl) {
         const response = await fetch(baseUrl, {
-            // method:'GET',
-            // headers:{
-            //     Accept: 'application.json',
-            //     Authorization: this.API_KEY
-            // }
+            method:'GET',
+            headers:{
+                Accept: 'application.json',
+                Authorization: this.API_KEY
+            }
         });
 
         const data = await response.json();
